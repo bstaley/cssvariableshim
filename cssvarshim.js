@@ -44,7 +44,7 @@ var fileReadCount = 0;
 Element.prototype.setStyle = function (name, value) {
 
     var styleAttr = this.getAttribute('style');
-    if (styleAttr !== null && styleAttr !== undefined) {
+    if (styleAttr) {
 
         var existed = (styleAttr.indexOf(name) !== -1);
         var styleSplit = styleAttr.split(';');
@@ -55,7 +55,7 @@ Element.prototype.setStyle = function (name, value) {
             existed = false;
 
             for (var i = 0; i < styleSplit.length; i++) {
-                if (styleSplit[i] !== '') {
+                if (styleSplit[i].trim() !== '') {
                     var styleSplitTwo = styleSplit[i].split(':');
                     var xname = styleSplitTwo[0];
                     var xval = styleSplitTwo[1];
