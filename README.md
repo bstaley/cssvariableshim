@@ -1,4 +1,4 @@
-cssvariableshim
+The CSS Variable Shim
 ===============
 
 Allows you to write variables into your css.
