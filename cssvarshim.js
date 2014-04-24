@@ -121,7 +121,7 @@ function readAFile(file) {
                 //local css file data
                 var file = rawFile.responseText;
                 //split each line
-                var lines = file.split('\r\n');
+                var lines = file.split(/\r?\n/g);
                 //informs us if we are within a section or on selectors
                 var onGuts = false;
 
