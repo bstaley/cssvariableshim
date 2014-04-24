@@ -2,6 +2,8 @@
 
 Allows you to write variables into your css.
 
+Note: If you would like to suggest a new feature please put an enhancement here https://github.com/bstaley/cssvariableshim/issues/new
+
 Very easy to use. All you need to do is define variables at the top of a css file like so.
 
 ###CSS Variable Shim Variable
